@@ -6,4 +6,8 @@ class User < ActiveRecord::Migration[5.1]
       t.float :balance
     end
   end
+  
+  def down
+    drop_table :user
+  end
 end
